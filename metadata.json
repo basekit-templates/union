@@ -153,7 +153,7 @@
         },
         "site": {
             "color__body--background": "#e7e7e7",
-            "@color__container--background" : "#ffffff",
+            "color__container--background" : "#ffffff",
             "color__link--text": "@color-swatch3",
             "color__companyname--text": "@font-swatch10-color",
             "font__companyname--font-family": "@font-swatch10-font-family",
