@@ -1,0 +1,16 @@
+<!-- Header -->
+<header class="template-header">
+    <div class="header-wrapper">
+        <div class="header-logo">
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo-default.png')})|raw}}
+        </div>
+        <div class="header-companyname">
+            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+        </div>
+        <div class="header-extendednavigation">
+            {{widget('extendednavigation', 'extendednavigation', {"align":"left"})|raw}}
+        </div>
+        {{widget('button', 'button-donate', {'text': 'Donate', 'align': 'widget-align-centre', 'target': '_blank'})|raw}}
+    </div>
+</header>
+<!-- End Header -->

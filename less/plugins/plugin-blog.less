@@ -1,0 +1,150 @@
+// --------------------------------
+// Wellington: plugin-blog.less
+// --------------------------------
+
+
+
+// --------------------------------
+// Blog Post List
+// --------------------------------
+
+
+.blogpostlist {
+
+    margin-bottom: 20px;
+
+
+    // Blog Article
+    // ---------------
+
+    .post-article {
+        background-color: @color-swatch1;
+        margin-bottom: 0;
+
+        .flex(@display: flex);
+        .justify-content(space-between);
+        .flex-wrap(wrap);
+    }
+
+
+
+        // Blog Image
+        // ---------------
+
+        .post-image {
+            .flex-order(0);
+            width: 100%;
+
+
+            // Image Link
+            .image-link {
+                background-position: 0;
+                position: relative;
+                display: inline-block;
+                height: 300px;
+                width: 100%;
+                background-size: cover;
+                background-position: 50%;
+            }
+
+
+            .image {
+                width: 0;
+                height: 0;
+
+            }
+        }
+
+
+
+
+        // Blog Post Content
+        // -----------------
+
+        .post-content {
+            .flex-order(2);
+            margin: 0;
+            padding: 0 40px 30px;
+            text-align: center;
+            width: 100%;
+        }
+
+
+
+
+        // Blog Post Title
+        // -----------------
+        .post-title,
+        .post-excerpt {
+              margin-bottom: 10px;
+        }
+
+
+        &__read-more {
+            display: inline-block;
+            padding: 15px 20px;
+        }
+
+
+
+
+        // Blog Post Footer
+        // ----------------
+
+        .post-footer {
+            .flex-order(1);
+            text-align: center;
+            width: 100%;
+
+            .timestamp {
+                margin: 25px 20px  15px;
+                font-size: 14px;
+                font-weight: 600;
+                color: @paragraph-color;
+                text-transform: uppercase;
+            }
+        }
+
+
+
+    // Post List Footer
+    // ----------------
+
+    .post-list-footer .pagination-list {
+
+        .flex(@display: flex);
+        .justify-content(@justify: space-between);
+
+
+    }
+
+}
+
+// Responsive Columns
+// ------------------
+
+.responsivecolumns .blogpostlist .post-article {
+    display: block;
+    width: 100%;
+}
+
+.responsivecolumns .blogpostlist .post-footer {
+    padding: 20px 0px 1px;
+}
+
+
+
+
+// --------------------------------
+// Blog Post Page
+// --------------------------------
+
+
+.blogpost {
+
+    .image-link {
+        text-align: center;
+    }
+}
+
+

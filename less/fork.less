@@ -1,0 +1,367 @@
+// --------------------------------
+// Office: Fork Changes
+// --------------------------------
+
+// Body and Headers
+// -----------------------
+
+body {
+    padding: 20px;
+    @media @tablet {
+        padding: 15px;
+    }
+    @media @mobile {
+        padding: 10px;
+    }
+}
+
+.container {
+    padding: 0 6%;
+    width: 100%;
+}
+
+.header-wrapper {
+    padding: 4% 6%;
+}
+
+.template-header {
+    width: 98%;
+}
+
+.bk-pt-default .template-header {
+    width: 100%;
+}
+
+.companyname__company-link {
+    text-decoration: none;
+}
+
+.bk-pt-default .header-wrapper {
+    background-color: @color__feature-content--background;
+}
+
+.bk-pt-home .header-extendednavigation {
+    @media @tablet {
+        right: 40px;
+    }
+    @media @mobile {
+        right: 20px;
+    }
+}
+
+.header-extendednavigation {
+    @media @tablet {
+        top: 40px;
+    }
+    @media @mobile {
+        top: 20px;
+    }
+}
+
+.bk-pt-default .header-extendednavigation {
+    @media @tablet {
+        right: 40px;
+        top: 35px;
+    }
+    @media @mobile {
+        top: 15px;
+        right: 20px;
+    }
+}
+
+
+// Navigation
+// -----------------------
+
+.navigation-item.selected > .item-name {
+    border-bottom: 0;
+    box-shadow: 0 3px 0 0;
+    @media @tablet {
+        text-decoration: none;
+        box-shadow: none;
+    }
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.navigation-item .item-name:hover {
+    text-decoration: none;
+}
+
+.navigation-toggle {
+    @media @tablet {
+        right: 0px;
+    }
+}
+
+.navigation-list--children {
+    background-color: fade(@color-swatch1, 20%)!important;
+}
+
+.extendednavigation__navigation-toggle {
+    border-bottom: 0;
+    &:hover {
+        border-bottom: 0;
+    }
+}
+
+.navigation-list {
+    background-color: transparent;
+    @media @bp-tablet {
+        background-color: @color__navigation-list--background;
+    }
+}
+
+.navigation-item.folder .item-name:hover {
+    @media @tablet {
+        text-decoration: none;
+    }
+}
+
+.navigation-item .item-name:hover {
+    box-shadow: 0 3px 0 0;
+    border: 0;
+    @media @tablet {
+        box-shadow: none;
+    }
+}
+
+
+// Buttons
+// -----------------------
+
+.button,
+button,
+.blogpostlist__read-more {
+    .transition(@duration:0.2s, @ease:ease-in-out); // Mixin
+    border-bottom: 3px solid @color-swatch3;
+    padding: 0 0 5px;
+    &:hover {
+        border-bottom: 3px solid black;
+        text-decoration: none;
+    }
+}
+
+
+// Feature
+// -----------------------
+
+.feature__headline,
+.feature__strapline {
+    max-width: 50%;
+    margin: 0;
+    @media @tablet {
+        max-width: 75%;
+    }
+    @media @mobile {
+        max-width: 100%;
+    }
+}
+
+.feature__content-wrap {
+    vertical-align: bottom;
+    padding: 100px 6% 50px;
+    @media @tablet {
+        padding: 100px 6% 35px;
+    }
+    @media @mobile {
+        padding: 100px 6% 30px;
+    }
+}
+
+.feature__content-inner-wrap {
+    text-align: left;
+    @media @mobile {
+        text-align: center;
+    }
+}
+
+.feature:after {
+    background-color: fade(@color__feature-content--background, 80%);
+}
+
+.feature__button {
+    border-bottom: 3px solid @color__feature-button--text;
+    padding: 0 0 10px;
+    color: @color__feature-button--text;
+    margin: 0;
+}
+
+
+// Slideshow
+// -----------------------
+
+button.responsiveslideshow__previous-button,
+button.responsiveslideshow__next-button,
+button.pause-toggle {
+    border-bottom: 0;
+    background-color: @color-swatch1;
+    &:hover {
+        color: @font-swatch4-color;
+        border-bottom: 0;
+        background-color: @color-swatch1!important;
+    }
+    @media @mobile {
+        background-color: fade(@color-swatch1, 20%);
+    }
+}
+
+.responsiveslideshow .caption {
+    @media @mobile {
+        display: none;
+    }
+}
+
+.responsiveslideshow .button--pagination {
+    border-top: 6px solid #ffffff;
+}
+
+.pagination-item.current .button--pagination {
+    background-color: transparent;
+    padding: 0px 10px;
+}
+
+.responsiveslideshow .contain .figure {
+    @media @mobile {
+        background-size: cover;
+    }
+}
+
+
+// Click to Call
+// -----------------------
+
+.clicktocall__phone-number-link {
+    &:hover {
+        text-decoration: none;
+    }
+    @media @mobile {
+        padding: 0 0 10px;
+    }
+}
+
+
+// Footer
+// -----------------------
+
+.template-footer [data-widget-type="content"] {
+    @media @mobile {
+        margin-right: 0;
+    }
+}
+
+.footer-wrapper {
+    padding: 0;
+}
+
+
+// Ecom
+// -----------------------
+
+.button--pagination.ecomproductslist__button {
+    padding: 0px 10px;
+    @media @mobile {
+        margin-bottom: 20px;
+    }
+}
+
+.quantity-wrap .button--quantity {
+    border-bottom: 0;
+    background-color: @color-swatch3;
+    color: @color-swatch1;
+    &:hover {
+        background-color: @color-swatch3;
+        color: @color-swatch1;
+    }
+}
+
+.ecomproduct__button {
+    min-width: 0;
+    padding: 0 0 5px;
+}
+
+.input--search.ecomproductslist__input {
+    height: 36px;
+}
+
+.message {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: block;
+    &:before {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}
+
+.ecombasketsummary__continue-shopping {
+    text-align: center;
+    margin: 20px auto;
+    display: block;
+    width: 140px;
+}
+
+.product-item-image,
+.product-item-image .image-link,
+.product-gallery .gallery-item,
+.product-image .image-link,
+.basket-item-image .image-link {
+    background-color: @color-swatch1;
+}
+
+.quantity-wrap .button--quantity:hover {
+    background-color: lighten(@color-swatch3, 10%);
+}
+
+.ecomproduct__product-category {
+    margin-bottom: 10px;
+}
+
+.fieldset--search .ecomproductslist__form-body {
+    border-bottom: 2px solid #E8E8E8;
+    @media @mobile {
+        border-bottom: 0;
+    }
+}
+
+.ecomproductslist__listing-section {
+    @media @mobile {
+        text-align: center;
+    }
+}
+
+.ecomproductslist__title-link {
+    @media @mobile {
+        text-align: center;
+    }
+}
+
+.ecomproductslist__product-item-price {
+    @media @mobile {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+
+// Blog
+// -----------------------
+
+.blogpostlist__button {
+    border-bottom: 0;
+    &:hover {
+        border-bottom: 0;
+    }
+}
+
+.blogpostlist__post-list-footer {
+    margin-top: 20px;
+}
+
+.blogpostlist .post-title {
+    margin-bottom: 0;
+}

@@ -1,0 +1,39 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bk-pt-home">
+
+    <div class="homepage-content"><!-- adds sticky footer -->
+
+        <div class="main-content"><!-- adds sticky footer-->
+
+            {{widget('feature', 'featurehome', {
+                "header": "profile",
+                "strapline": "profile",
+                "defaultBgImg": asset('images/feature.jpg'),
+                'positionTopPercentage': '0',
+                'showBtn': true,
+                buttonText: "Lorem Ipsum"
+            })|raw}}
+
+            {% include "includes/header.twig" %}
+
+                <!-- Page Content -->
+                <section class="template-content container">
+
+                <!-- Main Widget Zone -->
+                {{zone('main')|raw}}
+
+                </section>
+                <!-- End Page Content -->
+
+                {% include "includes/footer.twig" %}
+
+        </div><!-- End main-content -->
+
+    </div><!-- End homepage-content -->
+
+</div>
+
+{% endblock %}
