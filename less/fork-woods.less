@@ -31,7 +31,12 @@ body {
 
     @media @bp-mobile {
         margin: 0 15px;
-        width: ~"calc(100% - 40px)";
+        width: ~"calc(100% - 30px)";
+    }
+
+    @media @bp-tablet {
+        margin: 0;
+        width: 100%;
     }
 }
 
@@ -41,9 +46,22 @@ body {
 }
 
 .bk-pt-default .header-wrapper {
-    padding: 2% 0% 2% 6%;
+    margin: 0;
+    padding: 25px 35px;
     background-color: @color__body--background;
-    border-bottom: 1px solid #eeeeee;
+
+    @media @bp-tablet {
+        width: 100%;
+    }
+}
+
+.bk-pt-default .template-content {
+    padding-top: 0;
+}
+
+.bk-pt-default .container {
+    background-color: @color__container--background;
+    padding: 50px 40px;
 }
 
 .bk-pt-default .template-footer {
