@@ -3,7 +3,7 @@
     "thumbnail": "thumbnail.png",
     "screenshot": "union-screenshot.jpg",
     "widgetVersion":2,
-    "pageTypes": ["home"],
+    "pageTypes": ["home", "donate"],
     "templateType":"standard",
     "images": [
         "images/image-1.jpg",
